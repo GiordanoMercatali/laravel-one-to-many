@@ -57,7 +57,7 @@
                 <input type="text" class="form-control " id="git_link" name="git_link" value="{{ old('git_link', $project->git_link) }}">
             </div>
 
-            {{-- <div class="mb-3">
+            <div class="mb-3">
                 <label for="type">Choose type</label>
                 <select class="form-select" name="type_id" id="type">
                     <option @selected(!old('type_id', $project->type_id)) value="">None</option>
@@ -65,7 +65,7 @@
                         <option @selected(old('type_id', $project->type_id) == $type->id) value="{{ $type->id }}">{{ $type->name }}</option>
                     @endforeach
                 </select>
-            </div> --}}
+            </div>
 
             <a class="btn btn-warning" href="{{ route('admin.projects.index') }}"><i class="fa-solid fa-backward"></i></a>
             
