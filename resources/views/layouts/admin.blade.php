@@ -70,6 +70,13 @@
                                     <i class="fa-solid fa-laptop"></i> Projects
                                 </a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'dashboard' ? 'bg-secondary' : '' }}"
+                                    href="{{ route('admin.types.index') }}">
+                                    <i class="fa-solid fa-fire"></i> Types
+                                </a>
+                            </li>
                         </ul>
 
 
