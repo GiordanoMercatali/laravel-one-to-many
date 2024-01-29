@@ -49,7 +49,17 @@
             <div class="mb-3 ">
                 <label for="git_link" class="form-label">GitHub Link</label>
                 <input type="text" class="form-control " id="git_link" name="git_link" value="{{ old('git_link') }}">
-            </div>      
+            </div>
+            
+            {{-- <div class="mb-3">
+                <label for="type">Choose type</label>
+                <select class="form-select @error('type_id') is-invalid @enderror" name="type_id" id="type">
+                    <option @selected(!old('type_id')) value="">None</option>
+                    @foreach ($types as $type)
+                        <option @selected(old('type_id') == $type->id) value="{{ $type->id }}">{{ $type->name }}</option>
+                    @endforeach
+                </select>
+            </div> --}}
             
             <a class="btn btn-warning" href="{{ route('admin.projects.index') }}"><i class="fa-solid fa-backward"></i></a>
             
