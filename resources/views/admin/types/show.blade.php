@@ -17,6 +17,6 @@
         @else
             <p>No project with this type!</p>            
         @endif
-       
+        <a class="btn btn-warning" href="{{ route('admin.types.index') }}"><i class="fa-solid fa-backward"></i></a>
     </div>
 @endsection
