@@ -21,7 +21,7 @@ class ProjectsTableSeeder extends Seeder
         // $projects = config('projects');
 
         
-            for($i=0; $i<10; $i++){
+            for($i=0; $i<5; $i++){
                 $project = new Project();
                 $project->title = $faker->sentence(3);
                 $project->description = $faker->text(200);
