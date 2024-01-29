@@ -24,6 +24,11 @@
             <li>
                 {{ $project->git_link }}
             </li>
+
+            <li>
+                Type: {{ $project->type ? $project->type->name : 'None' }}
+            </li>
+
         </ul>
         <a class="btn btn-warning" href="{{ route('admin.projects.index') }}"><i class="fa-solid fa-backward"></i></a>
     </div>    
