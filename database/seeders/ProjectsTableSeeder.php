@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 use App\Models\Project;
+use App\Models\Type;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
@@ -29,6 +30,7 @@ class ProjectsTableSeeder extends Seeder
                 $project->year = $faker->year();
                 $project->git_link = $faker->url();
                 // $project->slug = Str::slug($project->title);
+                $project->type_id = Type::all()->first()->id;
                 $project->save();
             }
         
