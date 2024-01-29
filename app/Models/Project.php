@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 class Project extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'description', 'cover_image', 'languages', 'n_stakeholders', 'year', 'git_link', 'slug'];
+    protected $fillable = ['title', 'description', 'cover_image', 'languages', 'n_stakeholders', 'year', 'git_link', 'slug', 'type_id'];
 
     
     public function setTitleAttribute($_title){
