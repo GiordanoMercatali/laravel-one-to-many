@@ -16,5 +16,9 @@ class Project extends Model
         $this->attributes['title'] = $_title;
         $this->attributes['slug'] = Str::slug($_title, '-'); 
     }
+
+    public function type() {
+        return $this->belongsTo(Type::class); //A project has a single type, so we use belongsTo and `type` must be singular.
+    }
     
 }
